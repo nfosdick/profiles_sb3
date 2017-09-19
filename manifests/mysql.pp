@@ -6,7 +6,4 @@ class profiles::mysql {
   notify{"$config":}
   include mysql::server
 
-  $config.each |$index| {
-   notify { $value:  }
-  } 
 }
