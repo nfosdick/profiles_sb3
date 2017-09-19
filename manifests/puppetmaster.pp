@@ -6,7 +6,7 @@ class profiles::puppetmaster {
     ensure            => present,
     section           => 'master',
     key_val_separator => '=',
-    path              => '/etc/puppetlabs/puppet/puppet.conf'
+    path              => '/etc/puppetlabs/puppet/puppet.conf',
     setting           => 'data_binding_terminus',
     value             => 'none',
   }
