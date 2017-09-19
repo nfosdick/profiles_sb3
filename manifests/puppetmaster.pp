@@ -2,7 +2,7 @@
 class profiles::puppetmaster {
   include hiera_wrapper
 
-  ini_subsetting {'Disable Hiera Automatic Binding':
+  ini_subsetting {'data_binding_terminus':
     ensure            => present,
     section           => 'master',
     key_val_separator => '=',
