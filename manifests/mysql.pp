@@ -6,4 +6,7 @@ class profiles::mysql {
   notify{"$config":}
   include mysql::server
 
+  $config.each |$key, $value| {
+    notify { $key: message => $value }
+  }
 }
