@@ -1,4 +1,5 @@
 #
 class profiles::mysql {
-  notify{"Hello":}
+  #
+  include mysql::server
 }
