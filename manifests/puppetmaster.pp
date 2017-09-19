@@ -4,7 +4,7 @@ class profiles::puppetmaster {
 
   ini_subsetting {'Disable Hiera Automatic Binding':
     ensure            => present,
-    section           => 'main',
+    section           => 'master',
     key_val_separator => '=',
     path              => '/etc/puppetlabs/puppet/puppet.conf'
     setting           => 'data_binding_terminus',
