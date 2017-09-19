@@ -2,7 +2,7 @@
 class profiles::puppetmaster {
   include hiera_wrapper
 
-  ini_subsetting {'data_binding_terminus':
+  ini_setting {'data_binding_terminus':
     ensure            => present,
     section           => 'master',
     key_val_separator => '=',
