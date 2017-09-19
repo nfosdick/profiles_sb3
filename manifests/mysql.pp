@@ -2,7 +2,7 @@
 class profiles::mysql {
   #
 
-  $config = lookup('profiles::mysql::config', Hash[String], 'deep', {})
+  $config = lookup('profiles::mysql::config', Hash, 'deep', {})
   notify{"$config":}
   include mysql::server
 
