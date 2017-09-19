@@ -9,5 +9,6 @@ class profiles::puppetmaster {
     path              => '/etc/puppetlabs/puppet/puppet.conf',
     setting           => 'data_binding_terminus',
     value             => 'none',
+    notify            => Service[ 'pe-puppetserver' ],
   }
 }
