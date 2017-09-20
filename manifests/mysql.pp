@@ -1,6 +1,6 @@
 #
 class profiles::mysql {
-  # This is production branch 
+  # This is staging branch 
 
   $config = lookup('profiles::mysql::config', Hash, 'deep', {})
 

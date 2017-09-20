@@ -1,6 +1,6 @@
 #
 class profiles::apache {
-  # This is a production branch
+  # This is a staging branch
 
   $config = lookup('profiles::apache::config', Hash, 'deep', {})
 
